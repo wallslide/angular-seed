@@ -3,9 +3,14 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+  controller('QueryObjectsCtrl', ['$http', '$scope', function($http, $scope) {
+    $http.get('data/testdata.json').success(function(data) {
+      $scope.queryObjects = data;
+    });
 
-  }])
-  .controller('MyCtrl2', [function() {
+    $scope.show = {};
+    $scope.shouldShowDelete = function(url){
+      return ($scope.show.hasOwnProperty(url) && $scope.show[url]);
+    }
 
   }]);

@@ -1,0 +1,9 @@
+<ul class="thumbnails">
+  <li ng-repeat="queryObject in queryObjects" class="span3">
+    <div ng-mouseenter="show[queryObject.srcUrl] = true" ng-mouseleave="show[queryObject.srcUrl] = false" class="thumbnail relative">
+      <img ng-src="{{queryObject.dataUrl}}" alt=""/>
+      <i ng-show="shouldShowDelete(queryObject.srcUrl)" class="icon-remove-sign icon-white"></i>
+      <p>{{queryObject.srcUrl}}</p>
+    </div>
+  </li>
+</ul>
