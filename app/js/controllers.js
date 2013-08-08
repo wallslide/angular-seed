@@ -13,4 +13,10 @@ angular.module('myApp.controllers', []).
       return ($scope.show.hasOwnProperty(url) && $scope.show[url]);
     }
 
+    $scope.removeQueryObject = function(url){
+      $scope.queryObjects = _.filter($scope.queryObjects, function(item) {
+        return item.srcUrl !== url;
+      });
+    }
+
   }]);
