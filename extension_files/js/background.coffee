@@ -1,0 +1,1 @@
+#var fireRef = new Firebase

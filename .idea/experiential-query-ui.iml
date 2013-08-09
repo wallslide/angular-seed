@@ -6,6 +6,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Node.js v0.10.12 Core Modules" level="application" />
+    <orderEntry type="library" name="Firebase" level="project" />
+    <orderEntry type="library" name="Q Library" level="project" />
   </component>
 </module>
 

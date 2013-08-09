@@ -1,0 +1,8 @@
+<component name="libraryTable">
+  <library name="Q Library" type="javaScript">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/extension_files/js/q.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

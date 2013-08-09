@@ -1,0 +1,14 @@
+{
+  "name": "ExperientialQueryExtension",
+  "version": "0.1.0",
+  "description": "",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["extension_files/js/firebase.js",
+      "extension_files/js/q.min.js",
+      "extension_files/js/background.js"]
+  },
+
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+}
